@@ -10,7 +10,9 @@ const ItemAdittions = ({
   itemPrice,
   itemMenu,
   setAdditionItem,
-  additionItem
+  additionItem,
+  orderPrice,
+  setOrderPrice
 }) => {
   
   const addItemButtonHandler = () => {
@@ -18,6 +20,7 @@ const ItemAdittions = ({
       title: itemName,
       price: itemPrice,
     }])
+    setOrderPrice(orderPrice + itemPrice)
   };
   console.log(itemMenu);
   return (
@@ -49,6 +52,8 @@ const AditionItems = (props) => {
             setItemMenu={props.setItemMenu}
             setAdditionItem={props.setAdditionItem}
             additionItem={props.additionItem}
+            orderPrice={props.orderPrice}
+            setOrderPrice={props.setOrderPrice}
           />
         ))}
     </section>

@@ -6,7 +6,7 @@ import "../CSS/menu.css";
 import AditionItems from "./itemAdittions";
 
 // Comando _rafce
-const Modals = ({ itemName, itemPrice, itemMenu, setItemMenu }) => {
+const Modals = ({ itemName, itemPrice, itemMenu, setItemMenu, orderPrice, setOrderPrice }) => {
   const [isOpenModal1, openModal1, closeModal1] = useModal(false);
   const [additionItem, setAdditionItem] = useState([]);
 
@@ -17,6 +17,7 @@ const Modals = ({ itemName, itemPrice, itemMenu, setItemMenu }) => {
       additions: additionItem 
       
     }])
+    setOrderPrice(orderPrice + itemPrice)
     closeModal1()
   }
   return (
@@ -34,6 +35,8 @@ const Modals = ({ itemName, itemPrice, itemMenu, setItemMenu }) => {
             setItemMenu={setItemMenu}
             additionItem={additionItem}
             setAdditionItem={setAdditionItem}
+            orderPrice={orderPrice}
+            setOrderPrice={setOrderPrice}
           />
         </section>
         <section className="food-add">
