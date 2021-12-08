@@ -126,3 +126,40 @@ th,tr {
   color: #000000;
   border: none;
 }
+.MenuListSummary-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.MenuListSummary-btn-DeleteOrder,
+.MenuListSummary-btn-SendOrder {
+  width: 200px;
+  height:60px;
+  border-radius: 12px;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+}
+
+.MenuListSummary-btn-SendOrder {
+  background: linear-gradient(
+    89.5deg,
+    #cc30e6 18.53%,
+    #698deb 56.52%,
+    #24acf9 88.94%
+  );
+}
+.MenuListSummary-btn-DeleteOrder {
+  background-color: #898a8d;
+  border-color: #fff;
+}
+
+.orderprice-container {
+ color: #fff;
+ font-size: 20px;
+ margin: 2rem 0 2rem 20rem;
+ font-weight: bold;
+}

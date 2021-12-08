@@ -67,7 +67,7 @@ body {
 }
 .waiterButton {
   background: var(--waiterButton);
-  font-size: 60px;
+  font-size: 50px;
   border-radius: 30px;
   margin: 20px;
   width: 320px;
@@ -79,7 +79,7 @@ body {
 }
 .chefButton {
   background: linear-gradient(89.5deg, #269731 28.66%, #24acf9 75.26%);
-  font-size: 60px;
+  font-size: 50px;
   border-radius: 30px;
   margin: 20px;
   width: 320px;
@@ -96,7 +96,7 @@ body {
 }
 .navWaiter {
   position: absolute;
-  width: 80%;
+  width: 70%;
   height: 90px;
   left: 286px;
   top: 76px;
@@ -108,7 +108,7 @@ body {
   text-decoration: white;
   cursor: pointer;
   color: white;
-  font-size: 50px;
+  font-size: 35px;
   margin-left: 10%;
 }
 

@@ -2,9 +2,7 @@ import React from "react";
 import "../CSS/menu.css";
 import Modals from "./Modals.jsx";
 
-
-
-const ItemMenuChart = ({ itemImg, itemName, itemPrice, itemId, foodType, itemMenu, setItemMenu }) => {
+const ItemMenuChart = ({ itemImg, itemName, itemPrice, itemId, foodType, itemMenu, setItemMenu,setOrderPrice, orderPrice }) => {
 
   const addItemButtonHandler = () => {
 
@@ -14,10 +12,12 @@ const ItemMenuChart = ({ itemImg, itemName, itemPrice, itemId, foodType, itemMen
       id: itemId,
       additions:[]
     }])
+     
+    setOrderPrice(orderPrice + itemPrice)
   }
   return (
     <section className="itemMenu">
-      
+
       <img className="itemImg" src={itemImg} alt={itemName} />
       <p> {itemName} </p>
       <p> ${itemPrice} </p>
@@ -32,6 +32,8 @@ const ItemMenuChart = ({ itemImg, itemName, itemPrice, itemId, foodType, itemMen
           itemPrice={itemPrice}
           itemMenu={itemMenu}
           setItemMenu={setItemMenu}
+          orderPrice={orderPrice}
+          setOrderPrice={setOrderPrice}
         />
       )}
     </section>
