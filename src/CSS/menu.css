@@ -5,6 +5,7 @@
   height: 70vh;
   width: 100%;
   overflow-y: auto;
+  margin-top: 17px;
 }
 .menuItems section {
   margin: 2px;
@@ -64,6 +65,10 @@
 table.menuListSummary {
   padding-top: 20px;
   width: 100%;
+  border-spacing: 0px;
+}
+thead{
+  margin-bottom: 50px;
 }
 .menuSection {
   position: absolute;
@@ -74,10 +79,10 @@ table.menuListSummary {
   margin-top: 80px;
   right: 30px;
   padding-top: 10px;
+  overflow-y: auto;
+  height: 69vh;
 }
-th,
-td,
-tr {
+th,tr {
   justify-content: center;
   color: #fff;
   font-size: 22px;
@@ -115,4 +120,9 @@ tr {
 .trash-btn svg {
   width: 2rem;
   height: 2rem;
+}
+.principalOrder td{
+  background: #C4C4C4;
+  color: #000000;
+  border: none;
 }

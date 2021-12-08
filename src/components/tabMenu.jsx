@@ -21,7 +21,7 @@ const TabMenu = ({ itemMenu, setItemMenu }) => {
         <input type="radio" name="radio" value="Bebidas" onChange={() => setFilter("Bebidas")} id="Bebidas"></input>
         <section className="menuItems">
 
-          {menu.filter((item) => item.type === filter)
+          {menu.filter((item) => item.type === filter) 
             .map((item) => (
               <ItemMenuChart
                 key={item.id}
@@ -31,6 +31,7 @@ const TabMenu = ({ itemMenu, setItemMenu }) => {
                 itemId={item.id}
                 itemMenu={itemMenu}
                 setItemMenu={setItemMenu}
+                foodType={item.type}
               />
             ))}
         </section>
