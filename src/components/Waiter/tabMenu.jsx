@@ -1,7 +1,7 @@
-import "../CSS/tab.css";
+import "../../CSS/tab.css";
 import { React, useState } from "react";
 import ItemMenuChart from './ItemMenu.jsx';
-import dataMenu from "../data-menu/menu.json";
+import dataMenu from "../../data-menu/menu.json";
 
 const menu = dataMenu.menu;
 

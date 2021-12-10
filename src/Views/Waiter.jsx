@@ -1,9 +1,9 @@
 import '../index.css'
 import React, { useState } from "react";
-import WaiterNav from "../components/WaiterNav";
-import TabMenu from '../components/tabMenu';
-import MenuListSummary from '../components/SummaryMenu'
-import InputsWaiter from '../components/InputsWaiter';
+import WaiterNav from "../components/Waiter/WaiterNav";
+import TabMenu from '../components/Waiter/tabMenu';
+import MenuListSummary from '../components/Waiter/SummaryMenu'
+import InputsWaiter from '../components/Waiter/InputsWaiter';
 
 
 
@@ -35,6 +35,7 @@ const Waiter = () => {
           inputTableNum={inputTableNum}
           orderTable={orderTable}
           setOrderTable={setOrderTable}
+
         />
       </section>
       <TabMenu 

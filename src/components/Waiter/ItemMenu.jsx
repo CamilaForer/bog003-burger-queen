@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/menu.css";
+import "../../CSS/menu.css";
 import Modals from "./Modals.jsx";
 
 const ItemMenuChart = ({ itemImg, itemName, itemPrice, itemId, foodType, itemMenu, setItemMenu,setOrderPrice, orderPrice }) => {

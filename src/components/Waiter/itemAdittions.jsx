@@ -1,6 +1,6 @@
 import React from "react";
-import "../CSS/menu.css";
-import dataMenu from "../data-menu/menu.json";
+import "../../CSS/menu.css";
+import dataMenu from "../../data-menu/menu.json";
 
 const menu = dataMenu.menu;
 

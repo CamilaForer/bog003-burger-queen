@@ -1,8 +1,8 @@
-import '../index.css'
+import '../../index.css'
 import React from "react";
 import { Link } from "react-router-dom"
-import Logo from "../media/Logo.png";
-import camareros from "../media/camareros.png";
+import Logo from "../../media/Logo.png";
+import camareros from "../../media/camareros.png";
 
 
 function WaiterNav(){

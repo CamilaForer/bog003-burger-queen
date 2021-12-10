@@ -1,22 +1,22 @@
 import React from "react";
-import "../CSS/menu.css";
+import "../../CSS/menu.css";
 import { FaTrashAlt } from "react-icons/fa";
-import QuantifyOrder from "../components/QuantifyOrder";
+import QuantifyOrder from "./QuantifyOrder";
 
 const ItemOrder = ({
   buttonAction,
   price,
   title,
-  counter,
-  setCounter,
   key,
-  additions
+  additions,
+  setOrderPrice,
+  orderPrice
 }) => {
   return (
     <>
       <tr className="principalOrder" key={key}>
         <td>
-          <QuantifyOrder counter={counter} setCounter={setCounter} />
+          <QuantifyOrder setOrderPrice={setOrderPrice} price={price} orderPrice={orderPrice} />
         </td>
         <td colSpan="4"> {title}</td>
         <td colSpan="1"> ${price}</td>

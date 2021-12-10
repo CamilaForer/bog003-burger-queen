@@ -1,11 +1,9 @@
 import React,{useState} from "react";
-import { useModal } from "../hooks/useModal";
+import { useModal } from "../../hooks/useModal.js";
 import Modal from "./Modal";
-import "../CSS/Modal.css";
-import "../CSS/menu.css";
+import "../../CSS/Modal.css";
 import AditionItems from "./itemAdittions";
 
-// Comando _rafce
 const Modals = ({ itemName, itemPrice, itemMenu, setItemMenu, orderPrice, setOrderPrice }) => {
   const [isOpenModal1, openModal1, closeModal1] = useModal(false);
   const [additionItem, setAdditionItem] = useState([]);
@@ -17,8 +15,8 @@ const Modals = ({ itemName, itemPrice, itemMenu, setItemMenu, orderPrice, setOrd
       additions: additionItem 
       
     }])
-    setOrderPrice(orderPrice + itemPrice)
     closeModal1()
+    setOrderPrice(orderPrice + itemPrice)
   }
   return (
     <section>
